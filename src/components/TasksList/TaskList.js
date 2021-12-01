@@ -5,6 +5,9 @@ import { deleteTask, updateTask } from '../../redux/actions/tasksActions'
 const TasksList = () => {
   const tasks = useSelector((store) => store.tasks.data)
   const dispatch = useDispatch()
+  const update = (id, updatedTask) => {
+    dispatch(updateTask({id, updatedTask}))
+  }
   return (
     <div>
       <h1>List of Tasks</h1>
@@ -17,7 +20,7 @@ const TasksList = () => {
                 id={task.id}
                 title={task.title}
                 deleteTask={() => dispatch(deleteTask(task.id))}
-                editTask={() => dispatch(updateTask(task.id))}
+                updateTask={update}
               />
             )
           })}

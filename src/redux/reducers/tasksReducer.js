@@ -1,4 +1,4 @@
-import { ADD_TASK, GET_TASKS, DELETE_TASK } from '../actions/actionsType'
+import { ADD_TASK, GET_TASKS, DELETE_TASK, UPDATE_TASK } from '../actions/actionsType'
 import { v4 as uuidv4 } from 'uuid'
 
 const initialState = {
@@ -27,6 +27,18 @@ const tasksReducer = (state = initialState, action) => {
                   
                 ],
               }
+              case UPDATE_TASK:
+                return {
+                  ...state,
+                  data: [
+                    ...state.data.map(task => {
+                      if (task.id === action.payload.id) {
+                        return {...task, title: action.payload.updatedTask}
+                      }
+                      return task
+                    })
+                  ]
+                }
     default: {
       return state;
     }
