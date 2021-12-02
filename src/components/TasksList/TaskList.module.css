@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    color:rgb(40, 12, 85);
+    text-shadow: 0 0 2px rgb(99, 90, 224), 0 0 2px;
+}
+.taskListBlock {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: auto; 
+}
