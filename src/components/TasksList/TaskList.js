@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import Task from '../../components/Task/Task'
 import { deleteTask, updateTask } from '../../redux/actions/tasksActions'
+import styles from './TaskList.module.css'
 
 const TasksList = () => {
   const tasks = useSelector((store) => store.tasks.data)
@@ -10,8 +11,8 @@ const TasksList = () => {
   }
   return (
     <div>
-      <h1>List of Tasks</h1>
-      <div>
+      <h1 className={styles.title} >List of Tasks</h1>
+      <div className={styles.taskListBlock}>
         {tasks &&
           tasks.map((task) => {
             return (

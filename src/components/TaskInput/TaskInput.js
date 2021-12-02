@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import styles from './TaskInput.module.css'
 const TaskInput = ({ addTask }) => {
   const dispatch = useDispatch()
 
@@ -14,15 +15,19 @@ const TaskInput = ({ addTask }) => {
     setValue('')
   }
   return (
-    <>
-      <div>
-        <label>
-          Enter a task
-          <input type="text" value={value} onChange={onChangeInput} />
-        </label>
-        <button onClick={addTaskInput}>Add Task</button>
+    <div className={styles.taskInputContent}>
+      <div className={styles.taskInputContainer}>
+        <input
+          className={styles.taskInput}
+          type="text"
+          value={value}
+          placeholder="Enter a task"
+          onChange={onChangeInput}
+        />
+
+        <button onClick={addTaskInput}>Add</button>
       </div>
-    </>
+    </div>
   )
 }
 export default TaskInput

@@ -1,0 +1,45 @@
+.taskInput {
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    background: #f7f1f1;
+    padding: 5px;
+    min-width: 80vh;
+    outline: none;
+    margin-right: 10px;
+    font-size: initial;
+    box-shadow: 0 0  10px wheat, 0 0 1px;
+
+}
+.taskInputContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60vh;
+}
+.taskInputContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    width: 100vh;
+    margin: auto; 
+}
+.taskInputContainer button {
+    background: rgb(212, 146, 212);
+    border-radius: 5px;
+    padding: 3px;
+    width: 10vh;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: initial;
+    border: white;
+    box-shadow: 0 0  10px rgb(39, 4, 39), 0 0 1px;
+    color: rgb(90, 90, 90);
+}
+.taskInputContainer button:hover {
+    color: rgb(34, 5, 34);
+    text-shadow: 0 0  10px wheat, 0 0 1px;
+}

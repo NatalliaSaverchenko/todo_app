@@ -1,0 +1,67 @@
+.taskRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.task {
+    width: 80vh;
+    padding: 3px;
+    line-height: 30px;
+    border: 2px solid rgb(235, 210, 210);
+    border-radius: 10px;
+    background-color: rgb(219, 146, 241);
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.btnDelete {
+    border: 2px solid rgb(235, 210, 210);
+    background-color: rgb(231, 109, 128);
+    border-radius: 10px;
+    padding: 3px;
+    width: 10vh;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.btnEdit {
+    border: 2px solid rgb(235, 210, 210);
+    background-color: rgb(98, 151, 230);
+    border-radius: 10px;
+    padding: 3px;
+    width: 10vh;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.taskRowBlock {
+    width: 80vh;
+    padding: 3px;
+    border: 2px solid rgb(235, 210, 210);
+    border-radius: 10px;
+    background-color: rgb(219, 146, 241);
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.taskRowEditBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.taskRowEditBlock input {
+    line-height: 20px;
+    width: 50vh;
+    padding: 2px;
+}
+.taskRowEditBlock button {
+    border: none;
+    background: rgb(49, 6, 105);
+    padding: 5px;
+    cursor: pointer;
+    width: 50px;
+    color:wheat
+}

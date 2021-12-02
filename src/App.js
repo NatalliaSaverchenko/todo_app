@@ -3,7 +3,7 @@ import RouterView from './router';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <RouterView/>
     </div>
   );
