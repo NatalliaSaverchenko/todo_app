@@ -1,7 +1,7 @@
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import Home from '../pages/Home/Home'
-import ListOfTasks from '../pages/ListOfTasks/ListOfTasks'
+import { Home } from '../pages'
+import { ListOfTasks } from '../pages'
 const RouterView = () => {
   return (
     <Routes>

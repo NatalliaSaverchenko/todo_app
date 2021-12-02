@@ -1,5 +1,5 @@
-import Header from '../../components/Header/Header'
-import TaskInput from '../../components/TaskInput/TaskInput'
+import { Header } from '../../components'
+import { TaskInput } from '../../components'
 import { addTask } from '../../redux/actions/tasksActions'
 
 import styles from './Home.module.css'

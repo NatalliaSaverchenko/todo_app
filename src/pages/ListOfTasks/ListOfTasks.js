@@ -1,5 +1,5 @@
-import Header from '../../components/Header/Header'
-import TasksList from '../../components/TasksList/TaskList'
+import { Header } from '../../components'
+import { TasksList } from '../../components'
 import styles from './ListOfTasks.module.css'
 const ListOfTasks = () => {
     return (
